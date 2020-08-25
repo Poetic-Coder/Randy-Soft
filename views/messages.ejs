@@ -1,0 +1,21 @@
+<div class="container">
+    <!-- passsing javascript -->
+    <% if (success_message && success_message.length > 0 ) { %>
+        <div class="alert alert-success time-go">
+            <strong><%= success_message %></strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <% } %>
+    <% if(error_message && error_message.length > 0) { %>
+        <div class="alert alert-danger time-go">
+            <strong><%= error_message %></strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+    <% } %>
+
+
+</div>
